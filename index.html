@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>JIRA Integration: Using JIRA Without Using JIRA</title>
+
+    <meta name="description" content="How to integrate JIRA with other workflows and systems whilst discussing the JIRA APIs and Web Hooks. This presentation aims to spread awareness of the APIs as well as giving real-life examples and food-for-thought on how they can be used to automate repetitive tasks.">
+    <meta name="author" content="Mike Leonard">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        
+        <section>
+          <h1>JIRA Integration</h1>
+          <h2>Using JIRA Without Using JIRA</h2>
+          <p>by Mike Leonard</p>
+          <p>
+            <a href="http://www.mikeleonard.co.uk">www.mikeleonard.co.uk</a>
+            <br />
+            <a href="http://www.twitter.com/mleonard87">@mleonard87</a>
+            <br />
+            <a href="http://github.com/mleonard87">github.com/mleonard87</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Introduction</h2>
+          <ul>
+            <li>
+              <p>Overview of externally available tools</p>
+              <ul>
+                <li>Issue Collector</li>
+                <li>APIs</li>
+                <li>Web Hooks</li>
+              </ul>
+            </li>
+            <li>Examples of how they can be used.</li>
+            <li>Q&amp;A</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>JIRA Issue Collector</h2>
+            <ul>
+              <li>What is it?</li>
+              <li>Probably the easiest way to use JIRA without using JIRA.</li>
+              <li>User accounts not required but if you do have one and are currently logged it it will automatically use it</li>
+              <li>Why is it good? - Allows user feedback directly into JIRA from your system.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Configuration</h2>
+            <p>How to use it - configuring the form - what fields, issue types, etc.</p>
+            <p>Image here of configuration options</p>
+          </section>
+
+          <section>
+            <h2>Embedding in a System</h2>
+            <p>Just copy paste code to your web system.</p>
+            <p>Image here of the code it gives you to copy/paste</p>
+          </section>
+          
+          <section>
+            <h2>Atlassian Use It</h2>
+            <p>Its exactly how Atlassian include their own feedback</p>
+            <p>Image here of various feedback links found in JIRA.</p>
+          </section>
+
+        </section>
+
+        <section>
+          <h2>APIs</h2>
+          <ul>
+            <li>Application Programming Interface - general intro to what an API is</li>
+            <li>What are they? (JIRA specific)</li>
+            <li>SOAP vs REST (which JIRA version did each get introduced)</li>
+            <li>Fantastic documentation</li>
+            <li>Libraries available (official java, 3rd party python, etc)</li>
+            <li>Available self hosted and on demand but need to be enabled.</li>
+            <li>Why are they good? - There pretty much an API available for every oepration you can do within JIRA so everything can be automated or intergrated with whatever you want</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Web Hooks</h2>
+          <ul>
+            <li>What are they?</li>
+            <li>What version of JIRA were they introduced in?</li>
+            <li>How they work (event driven)</li>
+            <li>How are they configured? (through JIRA front-end)</li>
+            <li>Available self hosted and on demand (but need to be enabled. - is this true?!?!)</li>
+            <li>Why are they good? - Allows JIRA to push to remote systems without needing to write bespoke JIRA plugins or needing your remote system to regularly poll JIRA for updates.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Example - Transitioning Workflow (API)</h2>
+          <ul>
+            <li>Push workflow</li>
+            <li>Jenkins CI</li>
+            <li>Really replicating functionality found in Bamboo but its FREE!</li>
+            <li>In Jenkins theres actually a plugin that will do this for you! Just point and click.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Example - Changelog Builder (API)</h2>
+          <ul>
+            <li>Retrieving data</li>
+            <li>Creates a changelog</li>
+            <li>Highly customisable - examples of output</li>
+            <li>Open source</li>
+            <li>Jenkins CI</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Example - Issuing a Quiz/Test (Web Hooks)</h2>
+          <ul>
+            <li>Recruitment system POC</li>
+            <li>Issuing a test when an "Applicant" issue type is raised.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Example - Updating JIRA Fields (API)</h2>
+          <ul>
+            <li>No idea what to do here</li>
+            <li>Something thats not CI</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Conclusion</h2>
+          <ul>
+            <li>So thats what they do</li>
+            <li>You can see theyre fairly robust</li>
+            <li>Plenty of possiblities for integration especially becasue so many libraries exist</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Any Questions?</h1>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+         parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+         parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

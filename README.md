@@ -1,6 +1,8 @@
 ## JIRA Integration: Using JIRA Without Using JIRA
 How to integrate JIRA with other workflows and systems whilst discussing the JIRA APIs and "Web Hooks". This presentation aims to spread awareness of the APIs as well as giving real-life examples and food-for-thought on how they can be used to automate repetitive tasks.
 
+View it online [here].(http://mleonard87.github.io/AUG-JIRAIntegrationPresentation)
+
 A presentation for the [Autralia, Canberra, Atlassian User Group](https://aug.atlassian.com/display/AUG/Australia+-+Canberra+Atlassian+User+Group) - 13 Feb 2014.
 
 ## Viewing the Presentation

@@ -15,8 +15,9 @@ A presentation for the [Autralia, Canberra, Atlassian User Group](https://aug.at
 How to integrate JIRA with other workflows and systems whilst discussing the JIRA APIs and "Web Hooks". This presentation aims to spread awareness of the APIs as well as giving real-life examples and food-for-thought on how they can be used to automate repetitive tasks.
 
 ## Viewing the Presentation
+- Web: [http://mleonard87.github.io/AUG-JIRAIntegrationPresentation](http://mleonard87.github.io/AUG-JIRAIntegrationPresentation)
 - PDF: Download [JIRA Integration Using JIRA Without Using JIRA.pdf](https://github.com/mleonard87/AUGPresentation-JIRAIntegration/blob/master/JIRA_Intergration_Using_JIRA_Without_Using_JIRA.pdf)
-- HTML: Clone this repository or download it as a zip (and extract) and open index.html. Use the arrow keys to navigate.
+- Web (local): Clone this repository or download it as a zip (and extract) and open index.html. Use the arrow keys to navigate.
 
 ## Additional Information
 This presentation has been built using [reveal.js](https://github.com/hakimel/reveal.js) - A framework for easily creating beautiful presentations using HTML.

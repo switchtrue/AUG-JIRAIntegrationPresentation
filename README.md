@@ -5,9 +5,11 @@ View it online [http://goo.gl/A3yZ6V](http://goo.gl/A3yZ6V).
 
 A presentation for the [Autralia, Canberra, Atlassian User Group](https://aug.atlassian.com/display/AUG/Australia+-+Canberra+Atlassian+User+Group) - 13 Feb 2014.
 
+Read more about it this topic on my blog post: [Using JIRA Without Using JIRA](http://mikeleonard.co.uk/wordpress/using-jira-without-using-jira/)
+
 ## Viewing the Presentation
 - Web: [http://goo.gl/A3yZ6V](http://mleonard87.github.io/AUG-JIRAIntegrationPresentation)
-- PDF: Download [JIRA Integration Using JIRA Without Using JIRA.pdf](https://github.com/mleonard87/AUGPresentation-JIRAIntegration/blob/master/JIRA_Intergration_Using_JIRA_Without_Using_JIRA.pdf)
+- PDF: Download [JIRA Integration Using JIRA Without Using JIRA.pdf](https://github.com/mleonard87/AUG-JIRAIntegrationPresentation/raw/gh-pages/Using%20JIRA%20Without%20Using%20JIRA.pdf)
 - Web (local): Clone this repository or download it as a zip (and extract) and open index.html. Use the arrow keys to navigate.
 
 ## Additional Information

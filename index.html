@@ -53,7 +53,7 @@
         <section>
           <h2>Who am i?</h2>
           <ul>
-            <li>Software Developer - Java, Oracle, Python</li>
+            <li>Software Developer - Oracle, Java, XML, Python</li>
             <li>Work for Fivium</li>
             <li>User (and lover) of Atlassian Products</li>
           </ul>
@@ -70,7 +70,7 @@
                 <li>Web Hooks</li>
               </ul>
             </li>
-            <li>Examples of how they can be used.</li>
+            <li>Examples of how they can be used</li>
             <li>Q&amp;A</li>
           </ul>
         </section>
@@ -79,101 +79,227 @@
           <section>
             <h2>JIRA Issue Collector</h2>
             <ul>
-              <li>What is it?</li>
-              <li>Probably the easiest way to use JIRA without using JIRA.</li>
-              <li>User accounts not required but if you do have one and are currently logged it it will automatically use it</li>
-              <li>Why is it good? - Allows user feedback directly into JIRA from your system.</li>
+              <li>Introduced in JIRA 5.1</li>
+              <li>The easiest way to use JIRA without using JIRA</li>
+              <li>Why is it good?
+                <ul>
+                  <li>Allows user feedback directly into JIRA from your system</li>
+                  <li>Save you creating your own feedback form functionality</li>
+                  <li>Avoids loosing information in emails</li>
+                </ul>
+              </li>
+              <li>User accounts not required but can be used seamlessly</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>JIRA Issue Collector</h2>
+            <p>
+              <img src="images/ic_0.png" alt="Screen shot of JIRA Feedback issue collector." />
+            </p>
+          </section>
+
+          <section>
+            <h2>Configuration</h2>
+            <p>
+              <img src="images/ic_1.png" alt="Various configuration options provided to customise the basic look and feel of the issue collector." />
+            </p>
+          </section>
+
+          <section>
+            <h2>Configuration</h2>
+            <p>
+              <img src="images/ic_2.png" alt="Customising the issue collector form and viewing a preview." />
+            </p>
+          </section>
+
+          <section>
+            <h2>Embedding in a System</h2>
+            <p>Just copy paste code to your web system</p>
+            <p>
+              <img src="images/ic_3.png" alt="Screenshot of the code given by JIRA to embed into a website." />
+            </p>
+          </section>
+
+          <section>
+            <h2>Example</h2>
+            <p>
+              <img src="images/ic_4.png" alt="Screenshot of the code given by JIRA to embed into a website." />
+            </p>
+          </section>
+          
+          <section>
+            <h2>Example</h2>
+            <a id="feedbackDemoTrigger" href="javascript:alert('This feature has been disabled for security on the hosted slides. Sorry!');">Click here</a>
+          </section>
+
+          <section>
+            <h2>Atlassian Use It</h2>
+            <p>Its exactly how Atlassian include their own feedback</p>
+            <p>
+              <img src="images/ic_5.png" alt="Screenshot of the footer of Atlassians Jira include a 'Got Feedback?' button."/>
+            </p>
+          </section>
+
+          <section>
+            <h2>Atlassian Use It</h2>
+            <p>
+              <img src="images/ic_6.png" alt="Screenshot of the footer of Atlassians Jira include a 'Got Feedback?' button."/>
+            </p>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section>
+            <h2>Web Service APIs</h2>
+            <ul>
+              <li>Application Programming Interface</li>
+              <li>Web services</li>
+              <li>Why are they good?
+                <ul>
+                  <li>Pretty much an API available for every operation within JIRA</li>
+                  <li>Push/pull data</li>
+                  <li>Allows for full automation/integration</li>
+                </ul>
+              </li>
+              <li>SOAP/XML-RPC - Deprecated in JIRA 6.0</li>
+              <li>REST - Introduced in JIRA 4.2</li>
+              <li>Fantastic documentation</li>
+              <li>Libraries available (official java, 3rd party .NET, python, etc)</li>
+              <li>Available self hosted and on demand but need to be enabled</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Example - Transitioning Workflow</h2>
+            <ul>
+              <li>Push workflow</li>
+              <li>Jenkins CI</li>
+              <li>Replicating functionality found in Bamboo but its FREE!</li>
+              <li>Free Jenkins plugin available</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Example - Transitioning Workflow</h2>
+            <p>Rapid Board - Workflow</p>
+            <p>
+              <img src="images/api1_0.png" alt="Screenshot of a JIRA Rapid Board showing the current state of workflow with several issues at the 'Ready for Build' stage."/>
+            </p>
+          </section>
+
+          <section>
+            <h2>Example - Transitioning Workflow</h2>
+            <p>Jenkins Plugin</p>
+            <p>
+              <img src="images/api1_1.png" alt="Screenshot of Jenkins JIRA workflow plugin configuration."/>
+            </p>
+          </section>
+
+          <section>
+            <h2>Example - Transitioning Workflow</h2>
+            <p>Jenkins Comment in JIRA</p>
+            <p>
+              <img src="images/api1_2.png" alt="Screenshot of Jenkins comment that was added to a JIRA issue."/>
+            </p>
+          </section>
+
+          <section>
+            <h2>Example - Release Notes</h2>
+            <ul>
+              <li>All information is in JIRA - automate the generation of release notes</li>
+              <li>Release notes functionality does exist within JIRA - but its not great</li>
+              <li>Open source
+                <ul>
+                  <li>GitHub</li>
+                  <li>Highly customisable via templates</li>
+                  <li>Designed for CI</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Example - Release Notes</h2>
+            <p>Provide custom changelog field in JIRA</p>
+            <p>
+              <img src="images/api2_0.png" alt="Screenshot issue fields in JIRA include a custom field for a change log description."/>
+            </p>
+          </section>
+
+          <section>
+            <h2>Example - Release Notes</h2>
+            <p>Example of HTML output.</p>
+            <p>
+              <img src="images/api2_1.png" alt="HTML release notes."/>
+            </p>
+          </section>
+
+          <section>
+            <h2>Example - Release Notes</h2>
+            <p>Multiple formats.</p>
+            <p>
+              <img src="images/api2_2.png" alt="Plain text release notes."/>
+            </p>
+          </section>
+
+          <section>
+            <h2>Example - Updating JIRA Fields</h2>
+            <ul>
+              <li>No idea what to do here</li>
+              <li>Something thats not CI</li>
+            </ul>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section>
+            <h2>Webhooks</h2>
+            <ul>
+              <li>Introduced in JIRA 5.2</li>
+              <li>Send data to a URL</li>
+              <li>Event driven</li>
+              <li>Why are they good?
+                <ul>
+                  <li>No need to write complex integration code</li>
+                  <li>No need to poll for changes</li>
+                </ul>
+              </li>
+              <li>Available self hosted and on demand</li>
+              <li>Configured through JIRA front end</li>
             </ul>
           </section>
 
           <section>
             <h2>Configuration</h2>
-            <p>How to use it - configuring the form - what fields, issue types, etc.</p>
-            <p>Image here of configuration options</p>
+            <p>
+              <img src="images/wh_0.png" alt="Screenshot of Webhook configuration within JIRA."/>
+            </p>
           </section>
 
           <section>
-            <h2>Embedding in a System</h2>
-            <p>Just copy paste code to your web system.</p>
-            <p>Image here of the code it gives you to copy/paste</p>
-          </section>
-          
-          <section>
-            <h2>Atlassian Use It</h2>
-            <p>Its exactly how Atlassian include their own feedback</p>
-            <p>Image here of various feedback links found in JIRA.</p>
+            <h2>Example - Recruitment/Screening</h2>
+            <ul>
+              <li>Using JIRA for recruitment</li>
+              <li>Issue a assessment to an applicant for screening</li>
+              <li>Not possible to create assessments within JIRA</li>
+              <li>Use the web service API to record assessment scores in JIRA</li>
+            </ul>
           </section>
 
-        </section>
-
-        <section>
-          <h2>APIs</h2>
-          <ul>
-            <li>Application Programming Interface - general intro to what an API is</li>
-            <li>What are they? (JIRA specific)</li>
-            <li>SOAP vs REST (which JIRA version did each get introduced)</li>
-            <li>Fantastic documentation</li>
-            <li>Libraries available (official java, 3rd party python, etc)</li>
-            <li>Available self hosted and on demand but need to be enabled.</li>
-            <li>Why are they good? - There pretty much an API available for every oepration you can do within JIRA so everything can be automated or intergrated with whatever you want</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Web Hooks</h2>
-          <ul>
-            <li>What are they?</li>
-            <li>What version of JIRA were they introduced in?</li>
-            <li>How they work (event driven)</li>
-            <li>How are they configured? (through JIRA front-end)</li>
-            <li>Available self hosted and on demand (but need to be enabled. - is this true?!?!)</li>
-            <li>Why are they good? - Allows JIRA to push to remote systems without needing to write bespoke JIRA plugins or needing your remote system to regularly poll JIRA for updates.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Example - Transitioning Workflow (API)</h2>
-          <ul>
-            <li>Push workflow</li>
-            <li>Jenkins CI</li>
-            <li>Really replicating functionality found in Bamboo but its FREE!</li>
-            <li>In Jenkins theres actually a plugin that will do this for you! Just point and click.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Example - Changelog Builder (API)</h2>
-          <ul>
-            <li>Retrieving data</li>
-            <li>Creates a changelog</li>
-            <li>Highly customisable - examples of output</li>
-            <li>Open source</li>
-            <li>Jenkins CI</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Example - Issuing a Quiz/Test (Web Hooks)</h2>
-          <ul>
-            <li>Recruitment system POC</li>
-            <li>Issuing a test when an "Applicant" issue type is raised.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Example - Updating JIRA Fields (API)</h2>
-          <ul>
-            <li>No idea what to do here</li>
-            <li>Something thats not CI</li>
-          </ul>
         </section>
 
         <section>
           <h2>Conclusion</h2>
           <ul>
-            <li>So thats what they do</li>
-            <li>You can see theyre fairly robust</li>
-            <li>Plenty of possiblities for integration especially becasue so many libraries exist</li>
+            <li>Issue Collector, APIs, Webhooks</li>
+            <li>Easy to use and fully featured</li>
+            <li>Limitless possiblities for integration</li>
+            <li>Automate where possible</li>
           </ul>
         </section>
 
@@ -202,8 +328,8 @@
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
         // Parallax scrolling
-         parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-         parallaxBackgroundSize: '2100px 900px',
+        // parallaxBackgroundImage: 'images/IMG_2812.JPG',
+        // parallaxBackgroundSize: '2100px 100vh',
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
